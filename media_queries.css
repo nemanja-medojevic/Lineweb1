@@ -1,0 +1,153 @@
+/* MEDIA UPIT ZA MANJE RACUNARE I LAPTOPOVE */
+
+@media screen and (max-width: 950px) {
+    .wrapper {
+        width: 95%;
+    }
+    .image img[alt='front-over'] {
+        width: 35%;
+        right: 30px;
+        bottom: 30px;
+    }
+}
+
+/* MEDIA UPIT ZA TABLET UREDJAJE */
+
+@media screen and (max-width: 770px) { 
+    header {
+        justify-content: space-between;
+        padding-right: 15px;
+    }
+
+    .image img[alt='front-over'] {
+        right: 20px;
+        bottom: 20px;
+    }
+    main {
+        padding: 7px;
+    }
+    section {
+        padding: 6px;
+    }
+
+    .p-img {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    img[alt='computer'] {
+        width: 80%;
+        height: 80%;
+        margin: 10px 0 0;
+    }
+    aside {
+        padding: 6px;
+    }
+}
+
+/* MEDIA UPIT ZA TELEFONE */
+
+@media screen and (max-width: 600px) {
+    header {
+        position: relative;
+    }
+    header img {
+        border: 0;
+    }
+    header nav {
+        display: none;
+        margin: 0;
+    }
+    header .nav-active {
+        display: block;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        z-index: 1;
+        background-color: #c9231a;
+        width: 100%;
+    }
+    header nav a {
+        height: 60px;
+        padding: 0;
+        justify-content: center;
+    }
+    #hamburger {
+        display: inline-block;
+        padding: 20px;
+        cursor: pointer;
+        color: #fff;
+    }
+    #hamburger:hover {
+        background-color: brown;
+    }
+
+   
+}
+
+@media screen and (max-width: 500px) {
+    .wrapper {
+        min-width: 250px;
+    }
+    header {
+        flex-direction: row;
+        padding-right: 0;
+        position: relative;
+    }
+    header img {
+        height: 60px;
+    }
+    header .nav-active {
+        top: 60px;
+    }
+    .image img[alt='front-over'] {
+        right: 10px;
+        bottom: 10px;
+    }
+    main {
+        flex-direction: column;
+    }
+    section {
+        width: 100%;
+    }
+    .p-img {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    img[alt='computer'] {
+        width: 60%;
+        height: 60%;
+        margin: 15px 0 0;
+    }
+    main {
+        padding: 5px 10px;
+    }
+    main h2 {
+        text-align: center;
+        border-bottom: 1px solid red;
+    }
+    section {
+        padding: 0;
+    }
+
+    .two-articles article:first-child {
+        margin-right: 10px;
+    }
+
+    aside {
+        width: 95%;
+    }
+    main aside h2 {
+        border-bottom: 1px solid grey;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .two-articles {
+        flex-direction: column;
+    }
+
+    .two-articles article {
+        width: 100%;
+    }
+    
+}
